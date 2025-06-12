@@ -161,7 +161,7 @@ nav {
     text-align: center;
     min-height: fit-content;
     padding-bottom: 1.5em;
-    height: 80vh;
+    /* height: 70vh; */
 }
 
 .about-container {
@@ -188,7 +188,7 @@ nav {
 }
 
 .about-heading p,
-.mentors-heading p, 
+.mentors-heading p,
 .waitlist-heading p {
     font-size: .8em;
 }
@@ -275,13 +275,20 @@ b {
     /* text-align: left; */
 }
 
+.x-logo-container {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
 .x-logo {
     padding: .5em;
     background-color: var(--secondary-color);
     width: 1.2em;
     height: 1.2em;
     border-radius: 50%;
-    margin: auto;
+    margin: .2em .5em;
 }
 
 .x-logo img {
@@ -362,6 +369,7 @@ footer p {
         width: 80%;
         max-width: 1000px;
         margin: auto;
+        padding: 2em 0;
     }
 
     .about-main {
@@ -386,10 +394,10 @@ footer p {
     }
 
     .form iframe {
-    border: 2px solid var(--secondary-color);
-    border-radius: 10px;
-    width: 80%;
-    padding: .6em .6em .6em 0;
-    margin: auto;
-}
+        border: 2px solid var(--secondary-color);
+        border-radius: 10px;
+        width: 80%;
+        padding: .6em .6em .6em 0;
+        margin: auto;
+    }
 }
