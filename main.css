@@ -52,7 +52,6 @@ body {
 
 nav {
     background-color: transparent;
-    /* position: relative; */
     position: fixed;
     left: 0;
     right: 0;
@@ -170,7 +169,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90%;
 }
 
 .about-heading,
