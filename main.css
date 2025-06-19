@@ -93,6 +93,10 @@ nav {
     color: white;
 }
 
+.program-btn {
+    color: var(--tettiary-color) !important;
+}
+
 .navbar li :hover {
     color: #d5b23a;
     text-decoration: underline;
@@ -103,10 +107,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     display: flex;
-    /* justify-content: flex-end; */
-    /* position: relative; */
 }
 
 .hero-container {
@@ -147,6 +148,7 @@ nav {
     border: 2px solid var(--secondary-color);
     font-size: .8em;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .action-btn:hover {
@@ -301,7 +303,80 @@ b {
     color: white;
     text-align: center;
     min-height: fit-content;
-    padding-bottom: 1.5em;
+    padding-bottom: 2em;
+}
+
+.program-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1em 0 1em;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.numbering {
+    padding: .8em 1em;
+    background-color: var(--secondary-color);
+    color: var(--tettiary-color);
+    width: 1em;
+    border-radius: 18px;
+    font-size: .9em;
+    font-weight: 700;
+    margin: auto;
+}
+
+.step-heading {
+    font-family: tt-norms;
+    padding: 1em;
+}
+
+.step-details{
+    font-family: tt-norms-light;
+    padding: .5em 1em 1.5em;
+    max-width: 500px;
+}
+
+.step-details > p {
+    padding: .2em;
+}
+
+.w-address {
+    word-break: break-all;
+    /* word-wrap: break-word; */
+    /* user-select: all; */
+    color: var(--secondary-color);
+}
+
+.fa-clone {
+    padding-left: .4em;
+}
+
+.confirm {
+    position: fixed;
+    bottom: 3em;
+    left: 0;
+    right: 0;
+    color: var(--secondary-color);
+    background-color: #072a32af;
+    font-family: tt-norms-light;
+    padding: 1em;
+    /* z-index: 1; */
+}
+
+.tg-send {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.warning {
+    font-family: tt-norms-light;
+    padding: 0 1em 1em 1em;
+}
+
+.warning span {
+    color: red;
 }
 
 .form iframe {
@@ -344,7 +419,6 @@ footer p {
 
     .navbar {
         flex-direction: row;
-
     }
 
     .hero-container {
@@ -381,6 +455,15 @@ footer p {
         max-width: 1280px;
         /* justify-content: center; */
         margin: auto;
+    }
+
+    .program-container {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .program-container>div {
+        width: 30%;
     }
 }
 
